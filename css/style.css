@@ -1,0 +1,141 @@
+/* ----------------------------------------------------------Common-------------------------------------------------------------------------------- */
+.common-heading {
+    text-align: center;
+    
+}
+.common-heading h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--black);
+    font-weight: 500;
+    font-family: "oswald-bold";
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0px;
+}
+.common-heading h2::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/under-line.png);
+    height: 4px;
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+}
+/* ----------------------------------------------------------header---------------------------------------------------------------------------- */
+#header {
+    background-color: var(--brand1);
+}
+#header .left-p {
+    color: var(--w);
+    line-height: 40px;
+}
+#header .right-links {
+    display: inline-flex;
+
+}
+#header .right-links li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--w);
+    padding: 9px ;
+}
+#header .right-links li a:hover {
+    color: var(--black);
+}
+/* -----------------------------------------------------------------nav------------------------------------------------------------------------ */
+#nav {
+    padding: 10px 0px;
+}
+#nav .logo {
+    height: 40px;
+}
+#nav .nav-links {
+    display: inline-flex;
+}
+#nav .nav-links a {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+    font-family: "myrid-pro-regular";
+    margin: 10px 6px;
+}
+#nav .nav-links a:hover {
+    color: var(--brand1);
+}
+/* ---------------------------------------------------------------banner-------------------------------------------------------------------------------- */
+#banner {
+    background-image: url(../images/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#banner .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 0px;
+}
+#banner .banner-content {
+    text-align: right;
+    color: var(--w);
+}
+#banner .banner-content h2 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "oswald-regular";
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+#banner .banner-content h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "oswald-bold";
+    margin-bottom: 19px;
+    text-transform: uppercase;
+}
+#banner .banner-content p {
+    color: var(--w);
+    margin-bottom: 28px;
+}
+#banner .banner-content .btns {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+#banner .banner-content .btns a {
+    color: var(--w);
+    font-size: 14px;
+    font-family: "oswald-regular";
+    padding: 10px 20px;
+    border: 1px solid var(--w);
+    margin-left: 20px;
+}
+#banner .banner-content .btns a:hover {
+    background-color: var(--brand1);
+    border: 1px solid var(--brand1);
+    color: var(--w);
+}
+
+/* ----------------------------------------------------------------About us------------------------------------------------------------------------------- */
+#about-us {
+    padding: 55px 0px;
+}
+#about-us .common-heading {
+    margin-bottom: 40px ;
+}
+#about-us .left-img {
+
+}
+#about-us .left-img img {
+    width: 100%;
+}
+#about-us .right-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about-us .right-content p {
+    font-size: 13px;
+    line-height: 24px;
+    margin: 15px 0px;
+}
