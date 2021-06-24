@@ -139,3 +139,68 @@
     line-height: 24px;
     margin: 15px 0px;
 }
+/* ------------------------------------------------------------------Our services---------------------------------------------------------------------- */
+#service {
+    
+}
+#service .common-heading {
+    margin-bottom: 30px;
+}
+#service .service-body {
+}
+#service .service-body .top {
+    position: relative;
+    height: 50px;
+}
+#service .service-body .top .icon {
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+#service .service-body .top .icon .border {
+    border: 2px solid #F1F1F1;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service .service-body .top .icon .border .inner-border {
+    border: 2px solid var(--w);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+#service .service-body .top .icon .border img {
+    height: 40px;
+}
+#service .service-body .bottom {
+    text-align: center;
+    background-color: #F1F1F1;
+    padding: 14px;
+    padding-top: 50px;
+}
+#service .service-body .bottom h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    font-weight: 500;
+    font-family: "oswald-bold";
+    margin-bottom: 10px;
+
+}
+#service .service-body .bottom p {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: justify;
+}
