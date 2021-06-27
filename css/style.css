@@ -266,3 +266,84 @@
 #portfolio .image-body img {
     width: 100%;
 }
+/* --------------------------------------------------------------------team-------------------------------------------------------------------------- */
+#team {
+    padding: 30px 0px;
+}
+#team .common-heading {
+    margin-bottom: 30px;
+}
+#team .team-body {
+}
+#team .team-body:hover .bottom h4 {
+    color: var(--brand2);
+}
+#team .team-body .top {
+    position: relative;
+    overflow: hidden;
+
+    transition: all linear .3s;
+}
+#team .team-body .top .overlay {
+    position: absolute;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    right: -100%;
+    transition: all linear .3s;
+}
+#team .team-body:hover .top .overlay {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+#team .team-body:hover .top {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#team .team-body .top .overlay ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+#team .team-body .top .overlay ul li {
+}
+#team .team-body .top .overlay ul li a {
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--w);
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 12px 0px;
+}
+#team .team-body .top .overlay ul li a:hover {
+    background-color: var(--brand2);
+}
+#team .team-body .top .overlay ul li a i {
+}
+#team .team-body .top img {
+    width: 100%;
+
+}
+#team .team-body .bottom {
+    text-align: center;
+}
+#team .team-body .bottom h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    font-weight: 500;
+    font-family: "oswald-bold";
+    transition: all linear .3s;
+}
+#team .team-body .bottom h5 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "oswald-bold";
+}
