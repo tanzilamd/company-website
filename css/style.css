@@ -420,6 +420,8 @@
 /* ------------------------------------------------------------Footer--------------------------------------------------------------------------- */
 footer { 
     background-color: #353535;
+}
+.footer_top_padding {
     padding: 20px 0px;
 }
 footer h3 { 
@@ -427,12 +429,12 @@ footer h3 {
     color: var(--w);
     line-height: 24px;
     font-family: "oswald-bold";
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 footer .one { }
 footer .one .img { 
     height: 40px;
-    
+    margin-bottom: 20px;
 }
 footer .one .img img { 
     height: 100%;
@@ -442,7 +444,7 @@ footer .one p {
     font-size: 13px;
     line-height: 24px;
     color: var(--w);
-    margin: 30px 0px;
+    margin-bottom: 30px;
 }
 footer .two { }
 
@@ -504,8 +506,25 @@ footer .four {
 }
 footer .four li { 
     width: 33.333333333333336%;
+    box-sizing: border-box;
+    padding: 5px;
 }
 footer .four li img { 
     width: 100%;
     height: 100%;
+}
+/* --------------------------------------------------------------------bottom footer--------------------------------------------------------------------------- */
+.bottom_footer {
+    background-color: #555555;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+.bottom_footer p {
+    color: white;
+}
+.bottom_footer p a {
+    color: var(--brand2);
+    display: inline-block;
+
 }
