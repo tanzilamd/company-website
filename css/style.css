@@ -275,7 +275,7 @@
     margin-bottom: 30px;
 }
 #team .team-body {
-    
+
 }
 #team .team-body:hover .bottom h4 {
     color: var(--brand2);
@@ -528,5 +528,83 @@ footer .four li img {
 .bottom_footer p a {
     color: var(--brand2);
     display: inline-block;
+
+}
+
+/* ------------------responsive---------------------------------- */
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+    #header {
+        text-align: center;
+    }
+    #header .right-links {
+        display: flex;
+        justify-content: center;
+    }
+    #banner .banner-content {
+        text-align: center;
+        color: var(--w);
+    }
+    #banner .banner-content h1 {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "oswald-bold";
+        margin-bottom: 19px;
+        text-transform: uppercase;
+    }
+    #service .service-body {
+        margin-bottom: 30px;
+    }
+    #team .team-body {
+        margin-bottom: 30px;
+    }
+    #testimonial .testimonial_body {
+        margin-bottom: 30px;
+    }
+    footer .three {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    footer .two {
+        margin-bottom: 30px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #service .service-body {
+        margin-bottom: 30px;
+    }   
+    #team .team-body {
+        margin-bottom: 30px;
+    }
+    footer .one {
+        margin-bottom: 30px;
+    }
+    footer .two {
+        margin-bottom: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer .one {
+        margin-bottom: 30px;
+    }
+    footer .two {
+        margin-bottom: 50px;
+    }
+    footer .three {
+        margin-bottom: 50px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
 }

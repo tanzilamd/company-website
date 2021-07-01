@@ -4,33 +4,6 @@
         width: 90%;
         margin: 0 auto;
     }
-    #header {
-        text-align: center;
-    }
-    #header .right-links {
-        display: flex;
-        justify-content: center;
-    }
-    #banner .banner-content {
-        text-align: center;
-        color: var(--w);
-    }
-    #banner .banner-content h1 {
-        font-size: 30px;
-        color: #ffffff;
-        font-family: "oswald-bold";
-        margin-bottom: 19px;
-        text-transform: uppercase;
-    }
-    #service .service-body {
-        margin-bottom: 30px;
-    }
-    #team .team-body {
-        margin-bottom: 30px;
-    }
-    #testimonial .testimonial_body {
-        margin-bottom: 30px;
-    }
     .col-xs-1{
         width: 8.333333333333334%;
         flex: 0 0 8.333333333333334%;
@@ -306,7 +279,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width:1399.98px) {
     .container {
-        width: 1200px;
+        width: 992px;
         margin: 0 auto;
     }
     .col-xlg-1{
