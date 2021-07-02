@@ -584,6 +584,25 @@ footer .four li img {
     footer .two {
         margin-bottom: 50px;
     }
+    #nav .nav-links {
+        display: inline-flex;
+        flex-direction: column;
+        border: 1px solid var(--black);
+        position: absolute;
+        right: 0;
+        background-color: var(--w);
+        width: 250px;
+        text-align: left;
+        padding: 10px 15px;
+    }
+    #nav .nav-links a {
+        padding: 10px 6px;
+        display: block;     
+    }
+    #nav .nav-links a:hover {
+        background-color: var(--brand1);
+        color: var(--w);
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
