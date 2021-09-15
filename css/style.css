@@ -24,6 +24,9 @@
     left: 0;
     bottom: 0;
 }
+body {
+    overflow-x: hidden;
+}
 /* ----------------------------------------------------------header---------------------------------------------------------------------------- */
 #header {
     background-color: var(--brand1);
@@ -64,6 +67,12 @@
 }
 #nav .nav-links a:hover {
     color: var(--brand1);
+}
+#nav_trigger {
+    display: none;
+}
+.nav_close {
+    display: none;
 }
 /* ---------------------------------------------------------------banner-------------------------------------------------------------------------------- */
 #banner {
@@ -584,25 +593,7 @@ footer .four li img {
     footer .two {
         margin-bottom: 50px;
     }
-    #nav .nav-links {
-        display: inline-flex;
-        flex-direction: column;
-        border: 1px solid var(--black);
-        position: absolute;
-        right: 0;
-        background-color: var(--w);
-        width: 250px;
-        text-align: left;
-        padding: 10px 15px;
-    }
-    #nav .nav-links a {
-        padding: 10px 6px;
-        display: block;     
-    }
-    #nav .nav-links a:hover {
-        background-color: var(--brand1);
-        color: var(--w);
-    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -626,4 +617,59 @@ footer .four li img {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+}
+/* ------nav----------- */
+@media screen and (max-width: 767.98px) { 
+    #nav {
+        position: relative;
+    }
+    #nav .nav-links {
+        display: inline-flex;
+        flex-direction: column;
+        border: 1px solid var(--black);
+        position: absolute;
+        right: -200%;
+        top: 100%;
+        background-color: var(--w);
+        width: 250px;
+        text-align: left;
+        padding: 10px 15px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: all linear .3s;
+    }
+    .nav_show {
+        right: 0 !important;
+    }
+    #nav .nav-links a {
+        padding: 10px 6px;
+        display: block;     
+        margin: 0px;
+    }
+    #nav .nav-links a:hover {
+        background-color: var(--brand1);
+        color: var(--w);
+    }
+    .nav_trigger {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        color: var(--brand1);
+    }
+    .nav_close {
+        position: absolute;
+        right: 15px;
+        z-index: 999;
+        cursor: pointer;
+    }
+    .nav_close:hover {
+        color: red;
+    }
+    #nav_trigger {
+        display: block;
+    }
+    .nav_close {
+        display: block;
+    }
 }
